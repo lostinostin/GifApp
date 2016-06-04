@@ -16,6 +16,12 @@ body {
 	border-radius: 0px;
 }
 
+.btn {
+	margin:0;
+	border:1 .5 1 .5;
+	border-radius: 0px;
+}
+
 #gifsView {
 	width: 1200px;
 }
