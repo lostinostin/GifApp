@@ -17,7 +17,7 @@ $(document).ready(function () {
 	var theGifs = function(){
 
 		var country = $(this).attr('data-name');
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + country + "&limit=10&api_key=dc6zaTOxFJmzC ";
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + country + "&limit=10&api_key=dc6zaTOxFJmzC ";
 		
 		// Creates AJAX call for the gifs
 		$('#gifsView').empty();
