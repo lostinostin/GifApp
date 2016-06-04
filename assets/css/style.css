@@ -5,3 +5,27 @@ button, div, form, input {
 body {
 	background-color: gray;
 }
+
+.container-fluid {
+	padding:0;
+	margin:0;
+}
+
+.jumbotron-fluid {
+	margin:0;
+	border-radius: 0px;
+}
+
+#gifsView {
+	width: 1200px;
+}
+
+.gifs {
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+#moreGifs {
+	clear: both;
+}

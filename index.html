@@ -15,8 +15,13 @@
 </head>
 <body>
 
-	<div class="container">
-	  <h1>Click and Travel</h1>
+	<div class="container-fluid">
+		<div class="jumbotron jumbotron-fluid">
+	  		<div class="container">
+	    		<h1 class="display-3">Click and Travel</h1>
+	    		<p class="lead">Click a country and we'll take you there...ok, not exactly but you get the idea!</p>
+	  		</div>
+		</div>
 
 	  <div id="buttons"></div>
 
@@ -27,11 +32,17 @@
 	    <input id="addCountry" type="submit" value="Submit">
 	  </form>
 
-	  <div id="gifsView"></div>
-	  <button id="moreGifs"></button>
+	  <div id="gifsView" class="container">
+	  	
+	  </div>
+
+	  <div class="container">
+	  	<button id="moreGifs" class="row btn btn-primary"></button>
+	  </div>
+
+	  
 	</div>
 	<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
-	
 	<script src="assets/js/gifapp.js"></script>
 </body>
 </html>

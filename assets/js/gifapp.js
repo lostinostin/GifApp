@@ -7,7 +7,7 @@ $(document).ready(function () {
 		$('#buttons').empty();
 		// Loops through countryArray
 		for (var i = 0; i < countryArray.length; i++){
-		    var a = $('<button>');
+		    var a = $('<button class="btn btn-primary">');
 		    a.addClass('country').attr('data-name', countryArray[i]).text(countryArray[i]);
 		    $('#buttons').append(a);
 		}
@@ -29,7 +29,7 @@ $(document).ready(function () {
 	    	//$.each(response, function (index, value) { <-- I couldn't get it to work using this, and idk why?
 	    	for (var i=0; i<response.data.length; i++) {
 	    		console.log(response[i]);
-	    		var image = "<div class='gifs container'><img class='individualGif col-md-2' data-state='still' data-still='" + response.data[i].images.fixed_height_still.url + "' data-animate='" + response.data[i].images.fixed_height.url + "' src='" + response.data[i].images.fixed_height_still.url + "'></img></div>";
+	    		var image = "<div class='gifs'><img class='individualGif' data-state='still' data-still='" + response.data[i].images.fixed_height_still.url + "' data-animate='" + response.data[i].images.fixed_height.url + "' src='" + response.data[i].images.fixed_height_still.url + "'></img></div>";
 	    		$('#gifsView').append(image);
 	    	};
 
